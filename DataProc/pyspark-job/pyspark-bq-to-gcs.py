@@ -7,7 +7,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Google Cloud Storage Demo
-gcs_bucket = 'lake-gc-demo'
+gcs_bucket = 'your-gs-bucket'
 spark.conf.set('temporaryGcsBucket', gcs_bucket)
 
 # load data from BigQuery (shakepeare dataset)
